@@ -6,6 +6,7 @@ import {LaunchFireworkImpl} from './LaunchFirework'
 
 describe('花火打ち上げシステム（LaunchFireworkImpl）のテスト', () => {
 
+    //Todo SpyFireworkを正しく設定し、LaunchFireworkの実装を進めましょう。
     it('正しいパスワードの場合、spyFirework.fire(）が呼ばれていること', () => {
         const spyFirework = new SpyFirework()
         const correctPassword = '55party'

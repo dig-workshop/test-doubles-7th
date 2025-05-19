@@ -9,7 +9,7 @@ import SpyFirework from './SpyFirework'
 // リファクタリングの結果、Spyにアサートが含まれることとなりましたが、それはもうすでにSpyではなくMock（自己検証するSpy）です。
 
 describe('花火打ち上げシステム（LaunchFireworkImpl）のテスト', () => {
-
+//Todo まずはSpyFireworkを修正して、LaunchFireworkを実装してください。
     describe('リファクタ前', () => {
         it('正しいpasswordが設定されている場合、花火を打ち上げて中止はしないこと', () => {
             const spyFirework = new SpyFirework()
@@ -37,7 +37,7 @@ describe('花火打ち上げシステム（LaunchFireworkImpl）のテスト', (
             expect(spyFirework.disable_wasCalled).toBeTruthy()
         })
     })
-
+//Todo MockFireworkを使ってリファクタしてください。初めはMockFireworkが未実装のため何でも通ってしまうテストになってしまっています。
     describe('リファクタ後', () => {
         it('正しいpasswordが設定されている場合、花火を打ち上げて中止はしないこと', () => {
             const mockFirework = new MockFirework()

@@ -9,7 +9,7 @@ import FakeAuthServer from './FakeAuthServer'
 // 認証サーバーにユーザーID渡した時、認証済みならユーザー情報を、認証できていなければundefinedを返します。
 // ただし、Fakeにはロジックが含まれるため、Fakeに対してのテストも必要となります。
 
-
+//Todo FakeAuthServerを修正してテストを通しましょう。
 describe('認証サーバーのFakeのテスト', () => {
     it('ログイン済みのユーザーなら、ユーザー情報を返す', async () => {
         const fakeAuthServer = new FakeAuthServer()
@@ -29,6 +29,7 @@ describe('認証サーバーのFakeのテスト', () => {
     })
 })
 
+//Todo SpyFireworkを修正してLaunchFireworkを実装しましょう。
 describe('LaunchFireworkImplのテスト', () => {
     it('launchBy()にログイン済みのユーザーIDを渡した場合、花火が打ち上げられる', async () => {
         const fakeAuthServer = new FakeAuthServer()

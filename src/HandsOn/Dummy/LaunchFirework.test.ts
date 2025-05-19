@@ -12,9 +12,10 @@ import DefaultFirework from "./DefaultFirework";
 describe('LaunchFireworkImpl（花火打ち上げ装置）のテスト', () => {
     it('間違ったパスワードの場合、errorがthrowされる_validationCheck', () => {
 
+        //Todo
         // 現状のコードですが、テストとしてはパスしてしまいます。
-        // ですが、花火打ち上げ装置は現在修理中のため、そのまま使うと不具合を起こすリスクがあります。
-        // 正しくテストが実行できるように修正してください。
+        // ですが、花火打ち上げ装置 = defaultFireworks は現在修理中のため、そのまま使うと不具合を起こすリスクがあります。
+        // 正しくテストが実行できるように Dummy を使って修正してください。
 
         const invalidPassword = '88event'
         const defaultFireworks= new DefaultFirework()
